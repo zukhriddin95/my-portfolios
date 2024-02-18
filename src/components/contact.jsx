@@ -10,7 +10,7 @@ const Contact = () => {
 
 	return (
 		<div id='contact' class='container my-12 mx-auto px-2 md:px-4'>
-			<section class='mb-32 border-b border-t pt-12'>
+			<section class='mb-[20px] border-b border-t pt-12'>
 				<motion.div
 					variants={fadeIn('up', 0.4)}
 					initial='hidden'
