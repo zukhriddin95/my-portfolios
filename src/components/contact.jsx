@@ -10,20 +10,26 @@ const Contact = () => {
 
 	return (
 		<div id='contact' class='container my-12 mx-auto px-2 md:px-4'>
-			<motion.section
-				variants={fadeIn('up', 0.4)}
-				initial='hidden'
-				whileInView={'show'}
-				viewport={{ once: false, amount: 0.5 }}
-				class='mb-32 border-b border-t pt-12'
-			>
-				<div class='flex justify-center'>
+			<section class='mb-32 border-b border-t pt-12'>
+				<motion.div
+					variants={fadeIn('up', 0.4)}
+					initial='hidden'
+					whileInView={'show'}
+					viewport={{ once: false, amount: 0.5 }}
+					class='flex justify-center'
+				>
 					<div class='text-center md:max-w-xl lg:max-w-3xl'>
 						<h2 class='mb-12 px-6 text-3xl font-bold'>Contact us</h2>
 					</div>
-				</div>
+				</motion.div>
 
-				<div class='flex flex-wrap'>
+				<motion.div
+					variants={fadeIn('up', 0.4)}
+					initial='hidden'
+					whileInView={'show'}
+					viewport={{ once: false, amount: 0.5 }}
+					class='flex flex-wrap'
+				>
 					<form class='mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6'>
 						<div class='mb-3 w-full'>
 							<label
@@ -77,7 +83,13 @@ const Contact = () => {
 						</button>
 					</form>
 
-					<div class='w-full shrink-0 grow-0 basis-auto lg:w-7/12'>
+					<motion.div
+						variants={fadeIn('up', 0.4)}
+						initial='hidden'
+						whileInView={'show'}
+						viewport={{ once: false, amount: 0.5 }}
+						class='w-full shrink-0 grow-0 basis-auto lg:w-7/12'
+					>
 						<div class='flex flex-wrap'>
 							<div class='mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6'>
 								<div class='flex items-start'>
@@ -194,9 +206,9 @@ const Contact = () => {
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-			</motion.section>
+					</motion.div>
+				</motion.div>
+			</section>
 		</div>
 	)
 }
